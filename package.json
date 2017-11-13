@@ -19,7 +19,13 @@
     "type": "git",
     "url": "git+https://github.com/FullHuman/purgecss-webpack-plugin.git"
   },
-  "keywords": ["webpack-plugin", "purgecss", "remove", "unused", "css"],
+  "keywords": [
+    "webpack-plugin",
+    "purgecss",
+    "remove",
+    "unused",
+    "css"
+  ],
   "author": "Ffloriel",
   "license": "MIT",
   "bugs": {
@@ -27,6 +33,7 @@
   },
   "homepage": "https://github.com/FullHuman/purgecss-webpack-plugin#readme",
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint": "^4.10.0",
     "jest": "^21.2.1",
     "rollup": "^0.50.0",

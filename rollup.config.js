@@ -14,6 +14,6 @@ export default {
             format: 'cjs'
         }
     ],
-    plugins: [resolve(), commonjs(), babel()],
+    plugins: [resolve(), babel(), commonjs()],
     external: ['purgecss', 'webpack-sources', 'fs', 'path']
 }
