@@ -43,7 +43,10 @@ export default class PurgecssPlugin {
                             const purgecss = new Purgecss({
                                 content: filesToSearch,
                                 css: [asset.source()],
-                                stdin: true
+                                stdin: true,
+                                whitelist: this.options.whitelist || [],
+                                whitelistPatterns: this.options.whitelistPatterns || [],
+                                ...this.options.purgeOptions
                             })
                             compilation.assets[name] = new ConcatSource(
                                 purgecss.purge()[0].css
